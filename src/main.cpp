@@ -1,10 +1,9 @@
 #include <Arduino.h>
-/**
- * @file main.cpp
- * @brief Embedded Light Intensity Monitoring using LDR
- * @author rishabh-rb
- * @date 2026-02-20
- */
+
+#define LDR_PIN A0
+
+int ldrValue = 0;
+int threshold = 500; // Calibrated for average room light
 
 void setup() {
 }
