@@ -13,5 +13,14 @@ void setup() {
     delay(1000);
 }
 
+// ... setup from previous commit ...
+
 void loop() {
+    // Read the intensity from the LDR
+    ldrValue = analogRead(LDR_PIN);
+
+    Serial.print("LDR Value: ");
+    Serial.println(ldrValue);
+
+    delay(1000); // 1-second sampling interval
 }
